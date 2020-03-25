@@ -1,0 +1,9 @@
+8.编写Python程序以检查列表是否为空。
+
+def empty(oo):
+    if len(oo) == 0:
+        return 'oo is empty'
+    else:
+        return oo
+print(empty([1,5,6,6]))
+print(empty([]))

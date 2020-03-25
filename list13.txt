@@ -1,0 +1,4 @@
+13.编写一个Python程序以生成一个3 * 4 * 6 3D数组，其每个元素均为*。
+
+array = [[ ['*' for col in range(6)] for col in range(4)] for row in range(3)]
+print(array)

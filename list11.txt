@@ -1,0 +1,9 @@
+11.编写一个包含两个列表的Python函数，如果它们具有至少一个公共成员，则返回True。
+
+def ppp(list1,list2):
+    result = [list for list in list1 if list in list2]
+    if len(result) != 0:
+        return True
+    else:
+        return False
+ppp([123,12],[12,456])

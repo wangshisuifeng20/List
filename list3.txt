@@ -1,0 +1,13 @@
+3.编写Python程序以从列表中获取最大的数字。
+
+def max_number(list):
+    value = list[0]
+    for number in list[1:]:
+        if value < number:
+            value = number
+    return value
+print(max_number([1,2,3]))
+
+def max_number1(list):
+    return max(list)
+print(max_number([1,2,3]))

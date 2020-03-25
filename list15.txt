@@ -1,0 +1,6 @@
+15.编写一个Python程序以随机??播放并打印指定的列表。
+
+from random import shuffle
+color = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+shuffle(color)
+print(color)

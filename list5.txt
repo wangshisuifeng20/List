@@ -1,0 +1,11 @@
+5.编写一个Python程序，计算给定字符串列表中字符串长度为2或更大，并且第一个和最后一个字符相同的字符串数。
+样本列表：['abc'，'xyz'，'aba'，'1221'] 
+预期结果：2 
+
+def list44(li):
+    k = 0
+    for list in li:
+        if len(list) >= 2 and list[0] == list[-1]:
+            k +=1
+    return k
+print(list44(['abc','xyz','aba','1221','454']))

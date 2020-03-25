@@ -1,0 +1,8 @@
+2.编写一个Python程序以将列表中的所有项目相乘。
+
+def sumlist(k):
+    sum = 1
+    for list1 in k:
+        sum = sum * list1
+    return sum
+print(sumlist([1,-5,-8]))

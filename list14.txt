@@ -1,0 +1,9 @@
+14.编写一个Python程序，从指定的列表中删除偶数后，打印出该列表的数字。
+
+def delete_even(li):
+    result = []
+    for lii in li:
+        if lii % 2 !=0:
+            result.append(lii)
+    return result
+print(delete_even([1,2,3,4]))

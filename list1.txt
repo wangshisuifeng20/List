@@ -1,0 +1,8 @@
+1.编写一个Python程序以汇总列表中的所有项目。
+
+def sumlist(k):
+    sum = 0
+    for list1 in k:
+        sum += list1
+    return sum
+print(sumlist([1,2,-8]))

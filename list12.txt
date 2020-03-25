@@ -1,0 +1,7 @@
+12.在删除第0，第4和第5个元素之后，编写Python程序以打印指定的列表。
+样本列表：['红色'，'绿色'，'白色'，'黑色'，'粉红色'，'黄色'] 
+预期输出：['绿色'，'白色'，'黑色'] 
+
+color = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+color = [x for (i,x) in enumerate(color) if i not in (0,4,5)]
+print(color)

@@ -1,0 +1,5 @@
+9.编写Python程序以克隆或复制列表。
+
+list1 = [10,22,44,23,4]
+list2 = list(list1)
+print(list2)

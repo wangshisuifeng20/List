@@ -1,0 +1,7 @@
+19.编写一个Python程序以获取两个列表之间的差异。
+
+def ppp(list1,list2):
+    b = [x for x in list1 if x not in [list for list in list1 if list  in list2]]
+    a = [x for x in list2 if x not in [list for list in list1 if list  in list2]]
+    return a + b
+print(ppp([1,2,3],[2,4,5]))
