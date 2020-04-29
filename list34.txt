@@ -1,0 +1,13 @@
+34.使用Eratosthenes的Sieve方法编写一个Python程序，以计算指定数量的素数。
+注意：在数学中，Eratosthenes的筛网（古希腊语：κ?σκινον?ρατοσθ?νου?，kóskinonEratosthénous）
+是质数筛子之一，它是一种简单的古老算法，用于查找所有给定上限之前的所有质数。
+
+
+def prime_eratosthenes(n):
+    list = []
+    for i in range(2,n+1):
+        if i not in list:
+            print(i)
+            for j in range(i,n+1,i):
+                list.append(j)
+prime_eratosthenes(200)

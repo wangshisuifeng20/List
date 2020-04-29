@@ -1,0 +1,13 @@
+22.编写Python程序以在指定列表中查找项目的索引
+
+list5 = [1,5,6,7]
+list8 = []
+dict = {}
+for i,j in enumerate(list5):
+    list8.append(i)
+    dict[j] = i
+print(dict)
+
+
+num =[10, 30, 4, -6]
+print(num.index(30))

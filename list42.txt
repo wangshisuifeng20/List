@@ -1,0 +1,8 @@
+42.编写一个Python程序以在两个列表中查找缺失值和附加值。
+样本数据：第二个列表中缺少值：b，a，c 
+第二个列表中其他值：g，h
+
+
+def different(list1,list2):
+    print([list for list in list1 if list not in list2],[list for list in list2 if list not in list1 ])
+different(['a','b','c','d','e','f'],['d','e','f','g','h'])

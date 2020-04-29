@@ -1,0 +1,16 @@
+55.编写一个Python程序以从字典列表中删除键值对。
+
+original_list = [{'key1':'value1', 'key2':'value2'}, {'key1':'value3', 'key2':'value4'}]
+print("Original List: ")
+print(original_list)
+new_list = [{k: v for k, v in d.items() if k != 'key1'} for d in original_list]
+print("New List: ")
+print(new_list)
+
+12.在删除第0，第4和第5个元素之后，编写Python程序以打印指定的列表。
+样本列表：['红色'，'绿色'，'白色'，'黑色'，'粉红色'，'黄色']
+预期输出：['绿色'，'白色'，'黑色']
+color = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+color = [x for (i,x) in enumerate(color) if i not in (0,4,5)]
+print(color)
+

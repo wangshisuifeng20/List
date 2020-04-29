@@ -1,0 +1,28 @@
+40.编写一个Python程序，以根据单词的第一个字符拆分列表。
+from itertools import groupby
+from operator import itemgetter
+
+word_list = ['be','have','do','say','get','make','go','know','take','see','come','think',
+     'look','want','give','use','find','tell','ask','work','seem','feel','leave','call']
+
+for letter, words in groupby(sorted(word_list), key=itemgetter(0)):
+    print(letter)
+    for word in words:
+        print(word)
+
+43.编写一个Python程序以将列表拆分为不同的变量。
+color = [("Black", "#000000", "rgb(0, 0, 0)"), ("Red", "#FF0000", "rgb(255, 0, 0)"),
+         ("Yellow", "#FFFF00", "rgb(255, 255, 0)")]
+var1, var2, var3 = color
+print(var1)
+print(var2)
+print(var3)
+
+51.编写一个Python程序，以每N个元素分割一个列表。
+样本列表：['a'，'b'，'c'，'d'，'e'，'f'，'g'，'h'，'i'，'j'，'k '，'l'，'m'，'n']
+预期输出：[['a'，'d'，'g'，'j'，'m']，['b'，'e'，' h'，'k'，'n']，['c'，'f'，'i'，'l']]
+
+C = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']
+def list_slice(S, step):
+    return [S[i::step] for i in range(step)]
+print(list_slice(C,3))

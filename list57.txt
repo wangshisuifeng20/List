@@ -1,0 +1,6 @@
+57.编写一个Python程序来检查列表中的所有项目是否等于给定的字符串。
+
+color1 = ["green", "orange", "black", "white"]
+color2 = ["green", "green", "green", "green"]
+print(all(c == 'blue'for c in color1))
+print(all(c == 'green'for c in color1))

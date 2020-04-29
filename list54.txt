@@ -1,0 +1,4 @@
+54.编写一个Python程序来连接列表的元素
+
+color = ['red', 'green', 'orange']
+print(''.join(color))

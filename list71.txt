@@ -1,0 +1,10 @@
+71.编写一个Python程序来检查列表中的所有字典是否为空。
+样本列表：[{}，{}，{}]
+返回值：True
+样本列表：[{1,2}，{}，{}]
+返回值：False
+
+my_list = [{},{},{}]
+my_list1 = [{1,2},{},{}]
+print(all(not d for d in my_list))
+print(all(not d for d in my_list1))

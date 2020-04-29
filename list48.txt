@@ -1,0 +1,5 @@
+48.编写一个Python程序，以使用print（）函数打印一个嵌套列表（每个列表在新行上）。
+
+
+colors = [['Red'], ['Green'], ['Black']]
+print('\n'.join([str(lst) for lst in colors]))

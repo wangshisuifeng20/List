@@ -1,0 +1,22 @@
+39.编写一个Python程序，将多个整数列表转换为单个整数。
+L = [11, 33, 50]
+print("Original List: ",L)
+x = int("".join(map(str, L)))
+print("Single Integer: ",x)
+
+49.编写一个Python程序将list转换为字典列表
+color_name = ["Black", "Red", "Maroon", "Yellow"]
+color_code = ["#000000", "#FF0000", "#800000", "#FFFF00"]
+print([{'color_name': f, 'color_code': c} for f, c in zip(color_name, color_code)])
+
+
+56.编写一个Python程序以将字符串转换为列表。
+import ast
+color ="['Red', 'Green', 'White']"
+print(ast.literal_eval(color))
+
+45.编写一个Python程序，将一对值转换为排序的唯一数组
+L = [(1, 2), (3, 4), (1, 2), (5, 6), (7, 8), (1, 2), (3, 4), (3, 4),
+ (7, 8), (9, 10)]
+print("Original List: ", L)
+print("Sorted Unique Data:",sorted(set().union(*L)))

@@ -1,0 +1,18 @@
+77.编写一个Python程序来解码运行长度编码的给定列表。
+原始编码列表：
+[[2，1]，2、3，[2、4]，5、1]
+解码游程编码的所述列表：
+[1、2、3、4、4 ，5，1，]
+
+ def decode(alist):
+    def aux(g):
+        if isinstance(g, list):
+            return [(g[1], range(g[0]))]
+        else:
+            return [(g, [0])]
+    return [x for g in alist for x, R in aux(g) for i in R]
+n_list = [[2, 1], 2, 3, [2, 4], 5, 1]
+print("Original encoded list:") 
+print(n_list)
+print("\nDecode a run-length encoded said list:")
+print(decode(n_list))

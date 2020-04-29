@@ -1,0 +1,17 @@
+33.编写一个Python程序来生成列表的所有子列表。
+
+from itertools import combinations
+from itertools import permutations
+def sub_lists(my_list):
+    subs = []
+    subs1 = []
+    for i in range(0, len(my_list)+1):
+        temp = [list(x) for x in combinations(my_list, i)]
+        temp1 = [list(x) for x in permutations(my_list, i)]
+        if len(temp)>0:
+            subs.extend(temp)
+        if len(temp1)>0:
+            subs1.extend(temp1)
+    print("combinations:{}\n\npermutations:{}".format(subs,subs1))
+
+sub_lists([10, 20, 30, 40])

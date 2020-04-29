@@ -1,0 +1,13 @@
+18.编写一个Python程序以在Python中生成列表的所有子集合。
+import itertools
+print(list(itertools.permutations([1,2,3])))
+
+33.编写一个Python程序来生成列表的所有排列。
+from itertools import combinations
+def sub_lists(my_list):
+	subs = []
+	for i in range(0, len(my_list)+1):
+	  temp = [list(x) for x in combinations(my_list, i)]
+	  if len(temp)>0:
+	    subs.extend(temp)
+	return subs

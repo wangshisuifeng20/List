@@ -1,0 +1,10 @@
+52.编写一个Python程序来计算两个列表之间的相似度。
+样本数据：[“红色”，“橙色”，“绿色”，“蓝色”，“白色”]，[“黑色”，“黄色”，“绿色”，“蓝色”]
+预期输出：
+Color1 -Color2：['white'，'orange'，'red']
+Color2-Color1：['black'，'yellow']
+
+
+def different(li1,li2):
+    return [li for li in li1 if li not in li2],[li for li in li2 if li not in li1]
+print(different(["red", "orange", "green", "blue", "white"],["black", "yellow", "green", "blue"]))

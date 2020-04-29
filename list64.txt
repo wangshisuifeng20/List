@@ -1,0 +1,6 @@
+64.编写一个Python程序以同时遍历两个列表。
+
+num = [1, 2, 3]
+color = ['red', 'white', 'black']
+for a,b in zip(num,color):
+    print(a,b)

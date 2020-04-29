@@ -1,0 +1,4 @@
+47.编写一个Python程序，在列表的每个元素之前插入一个元素。
+
+color = ['Red', 'Green', 'Black']
+print([v for elt in color for v in ('c', elt)])

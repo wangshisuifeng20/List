@@ -1,0 +1,51 @@
+60.编写一个Python程序来查找一个元组，这是元组列表中最小的第二个索引值。
+
+x = [(4, 1), (1, 2), (6, 0)]
+print(min(x, key=lambda n: (n[1], -n[0])))
+
+
+6.编写一个Python程序以获取一个列表，该列表按给定非空元组列表中每个元组中的最后一个元素按升序排序。“
+样本列表”：[（2，5），（1，2），（4，4），（2，3），（2，1）]
+预期结果：[（2，1），（1 ，2），（2，3），（4，4），（2，5）]
+def last(n): return n[-1]
+
+def sort_list_last(tuples):
+  return sorted(tuples, key=last)
+print(sort_list_last([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
+
+22.编写Python程序以在指定列表中查找项目的索引。
+num =[10, 30, 4, -6]
+print(num.index(30))
+
+20.编写一个Python程序访问列表的索引。
+nums = [5, 15, 35, 8, 98]
+for num_index, num_val in enumerate(nums):
+    print(num_index, num_val)
+
+25.编写一个Python程序以从列表中随机选择一个项目。
+import random
+color_list = ['Red', 'Blue', 'Green', 'White', 'Black']
+print(random.choice(color_list))
+
+57.编写一个Python程序来检查列表中的所有项目是否等于给定的字符串。
+color1 = ["green", "orange", "black", "white"]
+color2 = ["green", "green", "green", "green"]
+
+print(all(c == 'blue' for c in color1))
+print(all(c == 'green' for c in color2))
+
+65.编写一个Python程序以按索引访问字典键元素。
+num = {'physics': 80, 'math': 90, 'chemistry': 86}
+print(list(num)[0])
+
+64.编写一个Python程序以同时遍历两个列表。
+num = [1, 2, 3]
+color = ['red', 'white', 'black']
+for (a,b) in zip(num, color):
+     print(a, b)
+	 
+67.编写一个Python程序以查找列表中的所有值均大于指定的数字。
+list1 = [220, 330, 500]
+list2 = [12, 17, 21]
+print(all(x >= 200 for x in list1))
+print(all(x >= 25 for x in list2))

@@ -1,0 +1,5 @@
+61.编写一个Python程序来创建一个空字典列表。
+
+n = 5
+l = [{} for _ in range(n)]
+print(l)

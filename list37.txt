@@ -1,0 +1,5 @@
+37.编写一个Python程序，从两个列表中查找共同的项目。
+
+def the_same(a,b):
+    return  [list for list in a if list in b]
+print(the_same([1,2,3],[2,3,4]))

@@ -1,0 +1,8 @@
+43.编写一个Python程序以将列表拆分为不同的变量。
+
+color = [("Black", "#000000", "rgb(0, 0, 0)"), ("Red", "#FF0000", "rgb(255, 0, 0)"),
+         ("Yellow", "#FFFF00", "rgb(255, 255, 0)")]
+var1, var2, var3 = color
+print(var1)
+print(var2)
+print(var3)

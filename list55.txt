@@ -1,0 +1,10 @@
+56.编写一个Python程序以将字符串转换为列表。
+
+import ast
+color ="['Red', 'Green', 'White']"
+print(ast.literal_eval(color))
+
+
+color ="['Red', 'Green', 'White']"
+color1 = eval(color)
+print(color1)

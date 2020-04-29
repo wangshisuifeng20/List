@@ -1,0 +1,24 @@
+76.编写一个Python程序来创建一个列表，该列表从给定的整数列表或字符的列表中反映出修改后的行程编码。
+原始列表：
+[1、2、3、4、4、5、1]
+该列表反映了所述列表中修改的游程编码：
+[[2、1]，2、3，[2 ，4]，5，1]
+原始字符串：
+aabcddddadnss
+该列表反映了所述字符串的修改后的游程编码：
+[[2，'a']，'b'，'c'，[4，'d']， 'a'，'d'，'n'，[2，'s']]
+
+
+from itertools import groupby
+def modified_encode(alist):
+        def ctr_ele(el):
+            if len(el)>1: return [len(el), el[0]]
+            else: return el[0]
+        return [ctr_ele(list(group)) for key, group in groupby(alist)]
+
+n_list = [1,1,2,3,4,4,5, 1]
+print(modified_encode(n_list))
+
+n_list = 'aabcddddadnss'
+print(modified_encode(n_list))
+

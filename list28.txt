@@ -1,0 +1,20 @@
+28.编写一个Python程序以查找列表中第二大的数字。
+
+def second_smallest(list):
+    if len(list) < 2:
+        return
+    if len(list) == 2 and (list[0] == list[1]):
+        return
+    dep = []
+    dup = set()
+    for x in list:
+        if x not in dup:
+            dep.append(x)
+            dup.add(x)
+        dep.sort()
+    return dep[-1]
+print(second_smallest([1,2,-8,-2,0,-2]))
+print(second_smallest([1,1,0,0,2,-2,-2]))
+print(second_smallest([1,1,1,0,0,0,2,-2,-2]))
+print(second_smallest([2,2]))
+print(second_smallest([2]))

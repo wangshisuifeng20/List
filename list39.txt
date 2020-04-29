@@ -1,0 +1,7 @@
+39.编写一个Python程序，将多个整数列表转换为单个整数。
+样本列表：[ 11，33，50 ] 预期输出：113350 
+
+L = [11, 33, 50]
+print("Original List: ",L)
+x = int("".join(map(str, L)))
+print("Single Integer: ",x)

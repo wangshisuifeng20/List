@@ -1,0 +1,14 @@
+21.编写一个Python程序以将字符列表转换为字符串。
+
+def pppp(list):
+    results = ""
+    for lists in list:
+        results += str(lists)
+    print(type(results))
+    return results
+print(pppp([1,2,3]))
+
+
+s = ['a','b']
+str1 = ''.join(s)
+print(str1)

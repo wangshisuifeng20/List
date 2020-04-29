@@ -1,0 +1,11 @@
+30.编写一个Python程序来获取列表中元素的频率。
+
+def counts(li):
+    dict = {}
+    for i in li:
+        if i in dict:
+            dict[i] += 1
+        else:
+            dict[i] = 1
+    return dict
+print(counts([1,1,2,2,3,3,4,4,5,5]))

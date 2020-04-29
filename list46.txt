@@ -1,0 +1,4 @@
+46.编写一个Python程序以选择列表的奇数项。
+
+list = [1,2,3,4,5,6,7,8]
+print([li for li in list if list.index(li) % 2 == 0])

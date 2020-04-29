@@ -1,0 +1,6 @@
+36.编写一个Python程序以获取变量的唯一标识号或字符串。
+
+x = 100
+print(format(id(x), 'x'))
+s = 'w3resource'
+print(format(id(s), 'x')) 

@@ -1,0 +1,7 @@
+53.编写一个Python程序来创建一个包含无限元素的列表。
+
+import itertools
+c = itertools.count(20,-1)
+print(next(c))
+print(next(c))
+print(next(c))

@@ -1,0 +1,8 @@
+49.编写一个Python程序将list转换为字典列表。
+样本列表：[“黑色”，“红色”，“栗色”，“黄色”]，[“＃000000”，“＃FF0000”，“＃800000”，“＃FFFF00”]
+预期输出：[ {'color_name'：'黑色'，'color_code'：'＃000000'}，{'color_name'：'红色'，'color_code'：'＃FF0000'}，{'color_name'：'栗色'，'color_code' ：'＃800000'}，{'color_name'：'黄色'，'color_code'：'＃FFFF00'}]
+
+
+color_name = ["Black", "Red", "Maroon", "Yellow"]
+color_code = ["#000000", "#FF0000", "#800000", "#FFFF00"]
+print([{'color_name':f,'color_code':c} for f,c in zip(color_name,color_code)])

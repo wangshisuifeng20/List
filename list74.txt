@@ -1,0 +1,14 @@
+74.编写一个Python程序，将给定列表元素的连续重复项打包到子列表中。
+原始列表：[0，0，1，2，3，4，4，5，6，6，6，7，8，9，4，4，4]
+将所述列表元素的连续重复项打包后子列表：
+[[0，0]，[1]，[2]，[3]，[4、4]，[5]，[6、6、6]，[7]，[8]，[9] ，[4，4]]
+
+from itertools import groupby
+def pack_consecutive_duplicates(l_nums):
+    return [list(group) for key, group in groupby(l_nums)]
+n_list = [0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4 ]
+print("Original list:") 
+print(n_list)
+print("\nAfter packing consecutive duplicates of the said list elements into sublists:")
+print(pack_consecutive_duplicates(n_list)) 
+

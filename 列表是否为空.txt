@@ -1,0 +1,11 @@
+8.编写Python程序以检查列表是否为空。
+
+l = []
+if not l:
+  print("List is empty")
+  
+71.编写一个Python程序来检查列表中的所有字典是否为空。
+my_list = [{},{},{}]
+my_list1 = [{1,2},{},{}]
+print(all(not d for d in my_list))
+print(all(not d for d in my_list1))

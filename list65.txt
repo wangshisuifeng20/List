@@ -1,0 +1,4 @@
+65.编写一个Python程序以按索引访问字典键元素。
+
+num = {'physics': 80, 'math': 90, 'chemistry': 86}
+print(list(num)[1])

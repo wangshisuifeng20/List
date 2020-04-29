@@ -1,0 +1,15 @@
+3.编写一个Python程序来删除给定列表的连续重复项。
+原始列表：
+[0，0，1，2，3，4，4，5，6，6，6，7，8，9，4，4]
+删除连续的重复项后：
+[0、1、2、3、4、5、6、7、8、9、4 ]
+
+from itertools import groupby
+def compress(l_nums):
+    return [key for key, group in groupby(l_nums)] 
+n_list = [0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4 ]
+print("Original list:") 
+print(n_list)
+print("\nAfter removing consecutive duplicates:")
+print(compress(n_list)) 
+
